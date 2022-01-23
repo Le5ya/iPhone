@@ -5,7 +5,7 @@ const tabsFunc = () => {
     const tabsImage = document.querySelector('.card__image_item')
     const phoneTitle = document.querySelector('.phone-title')
 
-console.log(phoneTitle)
+
 
     tabsOptions = [
       {
