@@ -10,13 +10,13 @@ fetch('https://jsonplaceholder.typicode.com/todos')
      
     })
     .then((data) => {
-      console.log(data)
+      // console.log(data)
     })
     .catch((error) => {
-      console.error(error.message);
+      // console.error(error.message);
     })
     .finally(() => {
-      console.log('finally')
+      // console.log('finally')
     })
 
   

@@ -5,6 +5,7 @@ chItem.forEach((item) => {
   const chContent = item.querySelector('.characteristics__description')
 
   chButton.addEventListener('click', () => {
+   
     if(chContent.classList.contains('open')) {
         chContent.style.height = ''
     } else {
@@ -12,12 +13,18 @@ chItem.forEach((item) => {
     }
       chButton.classList.toggle('active')
       chContent.classList.toggle('open')
+      
+    
+  });
+  chButton.addEventListener('blur', () => {
+        chContent.style.height = ''
+      chButton.classList.remove('active')
+      chContent.classList.remove('open')
+    
     
   });
 
-  // chContent.addEventListener('click', () => {
-  //   console.log(chContent)
-  // });
+
 })
 }
 accordeon()
