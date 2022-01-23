@@ -17,7 +17,7 @@ chItem.forEach((item) => {
     
   });
   chButton.addEventListener('blur', () => {
-        chContent.style.height = ''
+      chContent.style.height = ''
       chButton.classList.remove('active')
       chContent.classList.remove('open')
     
